@@ -1,16 +1,11 @@
-import Image, { type ImageProps } from "next/image";
-
-import styles from "./page.module.css";
-import { Button } from "@repo/ui/button";
-import Appbar from "@repo/ui/appbar";
-;
+import ClientAppbar from "../components/appbarclient";
 
 
-export default function ClientHome() {
+export default function Home() {
+
   return (
     <>
-      <Appbar/>
-      <Button />
+      <ClientAppbar />
     </>
   );
 }

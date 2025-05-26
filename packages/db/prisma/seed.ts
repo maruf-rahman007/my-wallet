@@ -1,6 +1,8 @@
 import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
 
+
+// use hashing before storing passwords in production
 async function main() {
   const alice = await prisma.user.upsert({
     where: { number: '9999999999' },
